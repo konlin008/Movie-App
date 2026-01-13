@@ -3,6 +3,7 @@ import {
   createMovie,
   deleteMovie,
   getSortedMovies,
+  healthCheck,
   movies,
   searchMovies,
   updateMovie,
@@ -13,7 +14,7 @@ import isAdmin from "../middlewares/isAdmin.js";
 
 const router = express.Router();
 
-router.get("/health", healthCheck);
+router.get("/health", healthCheck );
 
 router.use(isAuthenticated);
 
