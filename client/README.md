@@ -2,6 +2,8 @@
 
 This is the frontend of a MERN Movie Application built with React and Vite. It provides a user-friendly interface for browsing movies, managing watchlists, and administrative features for authorized users. The application implements JWT-based authentication with role-based access control.
 
+##Live Demo - https://movie-app-kappa-nine-50.vercel.app
+
 ## Tech Stack
 
 - **React 18** with Vite
