@@ -13,6 +13,8 @@ import isAdmin from "../middlewares/isAdmin.js";
 
 const router = express.Router();
 
+router.get("/health", healthCheck);
+
 router.use(isAuthenticated);
 
 router.get("/", movies);

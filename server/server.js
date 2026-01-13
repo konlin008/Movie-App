@@ -9,7 +9,7 @@ import movieRouter from "./src/routes/movie.router.js";
 
 const app = express();
 dotenv.config();
-
+app.set("trust proxy", 1);
 app.use(
   cors({
     origin: process.env.CLIENT_URL,

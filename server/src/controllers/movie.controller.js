@@ -175,3 +175,11 @@ export const deleteMovie = async (req, res) => {
     });
   }
 };
+export const healthCheck = (req, res) => {
+  return res.status(200).json({
+    success: true,
+    status: "OK",
+    message: "Server is running",
+    timestamp: new Date().toISOString(),
+  });
+};

@@ -1,9 +1,12 @@
 import axios from "axios";
 
 export const allMoviesApi = async () => {
-  const res = await axios.get("http://localhost:3000/api/v1/movies", {
-    withCredentials: true,
-  });
+  const res = await axios.get(
+    "https://movie-app-6t5r.onrender.com/api/v1/movies",
+    {
+      withCredentials: true,
+    }
+  );
   return res.data;
 };
 export const sortMoviesApi = async (by, order) => {
