@@ -1,7 +1,7 @@
 import { createBrowserRouter, Navigate, RouterProvider } from "react-router-dom";
 import Login from "./pages/authPages/Login";
 import MainLayout from "./layout/MainLayout";
-import HomePage from "./pages/userPages/homePage";
+import HomePage from "./pages/userPages/HomePage";
 import SearchPage from "./pages/userPages/SearchPage";
 import AddNewMovie from "./pages/adminPages/AddNewMovie";
 import {

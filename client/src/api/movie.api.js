@@ -11,7 +11,7 @@ export const allMoviesApi = async () => {
 };
 export const sortMoviesApi = async (by, order) => {
   const res = await axios.get(
-    "http://localhost:3000/api/v1/movies/sorted",
+    "https://movie-app-6t5r.onrender.com/api/v1/movies/sorted",
 
     {
       withCredentials: true,
@@ -25,7 +25,7 @@ export const sortMoviesApi = async (by, order) => {
 };
 export const searchMoviesApi = async (query) => {
   const res = await axios.get(
-    `http://localhost:3000/api/v1/movies/search?q=${query}`,
+    `https://movie-app-6t5r.onrender.com/api/v1/movies/search?q=${query}`,
     {
       withCredentials: true,
     }
@@ -33,14 +33,17 @@ export const searchMoviesApi = async (query) => {
   return res.data;
 };
 export const deleteMovie = async (id) => {
-  const res = await axios.delete(`http://localhost:3000/api/v1/movies/${id}`, {
-    withCredentials: true,
-  });
+  const res = await axios.delete(
+    `https://movie-app-6t5r.onrender.com/api/v1/movies/${id}`,
+    {
+      withCredentials: true,
+    }
+  );
   return res.data;
 };
 export const updateMovieApi = async ({ id, data }) => {
   const res = await axios.put(
-    `http://localhost:3000/api/v1/movies/${id}`,
+    `https://movie-app-6t5r.onrender.com/api/v1/movies/${id}`,
     data,
     {
       withCredentials: true,
@@ -49,8 +52,12 @@ export const updateMovieApi = async ({ id, data }) => {
   return res.data;
 };
 export const createMovieApi = async (data) => {
-  const res = await axios.post("http://localhost:3000/api/v1/movies/", data, {
-    withCredentials: true,
-  });
+  const res = await axios.post(
+    "https://movie-app-6t5r.onrender.com/api/v1/movies/",
+    data,
+    {
+      withCredentials: true,
+    }
+  );
   return res.data;
 };

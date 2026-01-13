@@ -2,7 +2,7 @@ import axios from "axios";
 
 export const loginApi = async (payload) => {
   const res = await axios.post(
-    "http://localhost:3000/api/v1/auth/login",
+    "https://movie-app-6t5r.onrender.com/api/v1/auth/login",
     payload,
     { withCredentials: true }
   );
@@ -10,20 +10,23 @@ export const loginApi = async (payload) => {
 };
 export const registerApi = async (payload) => {
   const res = await axios.post(
-    "http://localhost:3000/api/v1/auth/register",
+    "https://movie-app-6t5r.onrender.com/api/v1/auth/register",
     payload
   );
   return res.data;
 };
 export const fetchMeApi = async () => {
-  const res = await axios.get("http://localhost:3000/api/v1/auth/me", {
-    withCredentials: true,
-  });
+  const res = await axios.get(
+    "https://movie-app-6t5r.onrender.com/api/v1/auth/me",
+    {
+      withCredentials: true,
+    }
+  );
   return res.data.user;
 };
 export const logoutApi = async () => {
   const res = await axios.post(
-    "http://localhost:3000/api/v1/auth/logout",
+    "https://movie-app-6t5r.onrender.com/api/v1/auth/logout",
     {},
     { withCredentials: true }
   );
