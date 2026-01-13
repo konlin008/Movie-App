@@ -121,8 +121,8 @@ NODE_ENV=development
 
 ## Live Demo
 
-- **Frontend URL**: [Link to deployed frontend]
-- **Backend API**: [Link to deployed backend]
+- **Frontend URL**: [[Link to deployed frontend]](https://movie-app-kappa-nine-50.vercel.app/)
+- **Backend API**: [[Link to deployed backend]](https://movie-app-6t5r.onrender.com)
 
 ## Additional Documentation
 
